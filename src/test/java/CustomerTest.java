@@ -24,4 +24,17 @@ public class CustomerTest {
         vehicles.add(vehicle2);
         customer = new Customer(5_000, vehicles);
     }
+
+    @Test
+    public void canGetBalance() {
+
+        assertEquals(5,000, customer.getBalance());
+
+    }
+
+    @Test
+    public void canGetVehicles() {
+
+        assertEquals(2, customer.getVehicles().size());
+    }
 }
