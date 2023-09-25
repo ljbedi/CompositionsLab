@@ -1,6 +1,4 @@
-import com.codebase.Customer;
-import com.codebase.Engine;
-import com.codebase.Vehicle;
+import com.codebase.*;
 import org.junit.Test;
 import org.junit.Before;
 
@@ -17,8 +15,8 @@ public class CustomerTest {
 
     @Before
     public void before() {
-        vehicle1 = new Vehicle(20_000, "Red", engine1);
-        vehicle2 = new Vehicle(10_000, "Blue", engine2);
+        vehicle1 = new Vehicle(20_000, "Red", engine1, VehicleType.MOTORBIKE, TyreType.RACING);
+        vehicle2 = new Vehicle(10_000, "Blue", engine2, VehicleType.TANK, TyreType.WINTER);
         vehicles = new ArrayList<>();
         vehicles.add(vehicle1);
         vehicles.add(vehicle2);
@@ -28,7 +26,7 @@ public class CustomerTest {
     @Test
     public void canGetBalance() {
 
-        assertEquals(5_000, customer.getBalance());
+        assertEquals(5_000, customer.getBalance(), 0.0);
 
     }
 

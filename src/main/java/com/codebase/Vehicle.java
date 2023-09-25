@@ -10,12 +10,12 @@ public class Vehicle {
 
     private TyreType tyreType;
 
-    public Vehicle(double price, String color, Engine engine, int numTires, VehicleType vehicleType, TyreType tyreType) {
+    public Vehicle(double price, String color, Engine engine, VehicleType vehicleType, TyreType tyreType) {
         this.price = price;
         this.color = color;
         this.engine = engine;
-        this.numTires = numTires;
         this.vehicleType = vehicleType;
+        this.numTires = this.vehicleType.getNumTyres();
         this.tyreType = tyreType;
     }
 
