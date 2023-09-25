@@ -30,6 +30,8 @@ public class DealershipTest {
 
     @Test
     public void canGetBalance() {
-        assertEquals(100_000, dealership.getBalance());
+        assertEquals(100_000, dealership.getBalance(), 0.0);
     }
+
+
 }
