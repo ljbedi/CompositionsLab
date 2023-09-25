@@ -28,7 +28,7 @@ public class CustomerTest {
     @Test
     public void canGetBalance() {
 
-        assertEquals(5,000, customer.getBalance());
+        assertEquals(5_000, customer.getBalance());
 
     }
 

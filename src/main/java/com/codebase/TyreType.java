@@ -1,4 +1,4 @@
 package com.codebase;
 
-public class Tyre {
+public enum TyreType {
 }
