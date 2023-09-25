@@ -4,7 +4,7 @@ public class Vehicle {
     private double price;
     private String color;
     private Engine engine;
-    private int numTires;
+    private int numTyres;
 
     private VehicleType vehicleType;
 
@@ -15,7 +15,7 @@ public class Vehicle {
         this.color = color;
         this.engine = engine;
         this.vehicleType = vehicleType;
-        this.numTires = this.vehicleType.getNumTyres();
+        this.numTyres = this.vehicleType.getNumTyres();
         this.tyreType = tyreType;
     }
 
@@ -31,8 +31,8 @@ public class Vehicle {
         return engine;
     }
 
-    public int getNumTires() {
-        return numTires;
+    public int getNumTyres() {
+        return numTyres;
     }
 
     public VehicleType getVehicleType() {
