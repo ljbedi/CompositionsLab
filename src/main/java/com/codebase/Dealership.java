@@ -2,22 +2,10 @@ package com.codebase;
 
 import java.util.ArrayList;
 
-public class Dealership {
-    private double balance;
-    private ArrayList<Vehicle> vehicles;
+public class Dealership extends VehicleOwner {
+
 
     public Dealership(double balance, ArrayList<Vehicle> vehicles) {
-        this.balance = balance;
-        this.vehicles = vehicles;
+        super(balance, vehicles);
     }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public ArrayList<Vehicle> getVehicles() {
-        return vehicles;
-    }
-
-
 }
